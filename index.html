@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <label>Apenas letras:</label>
+    <br>
+    <input type="text" name="letras" id="letras" required pattern="[a-zA-Z\s]+$">
+    <br><br>
+    <label>Apenas números:</label>
+    <br>
+    <input type="number" name="number" id="number" min="0" max="100" step="0.01" required>
+    <br><br>
+    <label>Data de nascimento:</label>
+    <br>
+    <input type="date" min="2020-01-01" max="2022-02-03" required>
+    <br><br>
+    <label>Time:</label>
+    <br>
+    <input type="time" name="hour" required>
+    <br><br>
+    <label>Telefone:</label>
+    <br>
+    <input  type="text" name="tel" id="tel" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" title="(16) 91234-5678">
+    <br><br>
+    <label>Email:</label>
+    <br>
+    <input type="text" >
+    <br><br>
+    <label>CPF:</label>
+    <br>
+    <input type="text" name="cpf" id="cpf" required pattern="(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})">
+    <br><br>
+    <label>Input:</label>
+    <br>
+    <input type="file" name="img" id="img" required accept="image/*">
+    <br><br>
+    <label>Enviar</label>
+    <input type="submit">
+  </form>
+
+</body>
+</html>
+
